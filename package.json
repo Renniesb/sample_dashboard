@@ -1,0 +1,15 @@
+{
+  "name": "dashboard-demo",
+  "version": "1.0.0",
+  "description": "feeds real-time dashboard information to Power-BI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3",
+    "http-proxy": "^1.12.0"
+  }
+}

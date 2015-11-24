@@ -17,7 +17,7 @@
     }
   }]);
 
-  // when Office has initalized, manually bootstrap the app
+  // when it has initalized, manually bootstrap the app
   //Office.initialize = function(){
   //};
   jQuery(function () {

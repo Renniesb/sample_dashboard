@@ -12,15 +12,6 @@
     vm.title = 'home controller';
     vm.dataObject = {};
 
-    // getDataFromService();
-
-    // function getDataFromService(){
-    //     powerbiService.getGroups()
-    //     .then(function(response){
-    //       vm.dataObject = response;
-    //       console.log(vm.dataObject);
-    //     });
-    // }
   }
 
 })();
