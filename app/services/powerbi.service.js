@@ -5,7 +5,7 @@
     function powerbiService(powerBIUrl, $http, $resource) {
 
 
-          $http.jsonp('https://api.powerbi.com/v1.0/myorg/datasets?callback=JSON_CALLBACK')
+          $http({method: 'GET', url: 'https://api.powerbi.com/v1.0/myorg/datasets'})
         .success(function(d){ console.log( "yay" ); })
         .error(function(d){ console.log( "nope" ); });
 
