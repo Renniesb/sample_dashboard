@@ -5,7 +5,7 @@
     function powerbiService(powerBIUrl, $http, $resource) {
 
 
-          $http({method: 'GET', url: 'https://api.powerbi.com/beta/myorg/dashboards', headers: {'Authorization': 'Bearer tokenString'}})
+          $http({method: 'GET', url: 'https://api.powerbi.com/v1.0/myorg/dashboards', headers: {'Authorization': 'Bearer tokenString'}})
         .success(function(d){ console.log( "yay" ); })
         .error(function(d){ console.log( "nope" ); });
 
