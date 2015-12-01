@@ -8,7 +8,7 @@
   function adalConfigurator($httpProvider, adalProvider, appId, powerBIUrl) {
       var adalConfig = {
           instance: 'https://login.microsoftonline.com/',
-      tenant: '@rennierennieapps.onmicrosoft.com',//'common',
+      tenant: 'rennieapps.onmicrosoft.com',//'common',
       clientId: appId,
       extraQueryParameter: 'nux=1',
       endpoints: {},
