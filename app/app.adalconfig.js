@@ -15,7 +15,7 @@
       cacheLocation: 'localStorage' // enable this for IE, as sessionStorage does not work for localhost.
     };
       //The url used to talk to the powerbi api
-      adalConfig.endpoints['https://api.powerbi.com/v1.0/myorg'] = powerBIUrl;
+      adalConfig.endpoints['https://api.powerbi.com/beta/myorg'] = powerBIUrl;
     adalProvider.init(adalConfig, $httpProvider);
   }
 })();
