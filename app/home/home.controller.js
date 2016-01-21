@@ -2,7 +2,7 @@
   'use strict';
 
   angular.module('demoApp')
-         .controller('homeController', ['powerbiService', homeController]);
+         .controller('homeController', ['powerbiService','onedriveService', homeController]);
 
   /**
    * Controller constructor
