@@ -1,12 +1,12 @@
 (function() {
     'use strict'
-    angular.module('demoApp').service('onedriveService', ['$scope','$http','$resource', onedriveService]);
+    angular.module('demoApp').service('onedriveService', ['$http','$resource', onedriveService]);
 
-    function onedriveService($scope, $http, $resource) {
+    function onedriveService($http, $resource) {
 
-    	$scope.OneDriveAPI = $resource('https://login.live.com/oauth20_authorize.srf?client_id={"0000000044177AA6"}&scope={"onedrive.readonly"}&response_type=token&redirect_uri={"http://renniesb.github.io/sample_dashboard/#/"}', { callback: "JSON_CALLBACK" }, { get: { method: "JSONP" }});
+    	var OneDriveAPI = $resource('https://login.live.com/oauth20_authorize.srf?client_id={"0000000044177AA6"}&scope={"onedrive.readonly"}&response_type=token&redirect_uri={"http://renniesb.github.io/sample_dashboard/#/"}', { callback: "JSON_CALLBACK" }, { get: { method: "JSONP" }});
 
-    $scope.OneDriveResult = $scope.weatherAPI.get();
+   	var OneDriveResult = OneDriveAPI.get();
 
 
      //      $http({method: 'GET', url: 'https://login.live.com/oauth20_authorize.srf?client_id={"0000000044177AA6"}&scope={"onedrive.readonly"}&response_type=token&redirect_uri={"http://renniesb.github.io/sample_dashboard/#/"}'})
