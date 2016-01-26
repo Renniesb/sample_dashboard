@@ -6,7 +6,7 @@
 
     	$scope.OneDriveAPI = $resource('https://login.live.com/oauth20_authorize.srf?client_id={"0000000044177AA6"}&scope={"onedrive.readonly"}&response_type=token&redirect_uri={"http://renniesb.github.io/sample_dashboard/#/"}', { callback: "JSON_CALLBACK" }, { get: { method: "JSONP" }});
 
-    $scope.OneDriveAPI = $scope.weatherAPI.get();
+    $scope.OneDriveResult = $scope.weatherAPI.get();
 
 
      //      $http({method: 'GET', url: 'https://login.live.com/oauth20_authorize.srf?client_id={"0000000044177AA6"}&scope={"onedrive.readonly"}&response_type=token&redirect_uri={"http://renniesb.github.io/sample_dashboard/#/"}'})
